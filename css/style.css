@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+.text {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    animation: wave 0.5s ease-in-out infinite alternate;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 95vh;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.text p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
