@@ -56,7 +56,9 @@
     transform: translateY(30px);
     transition: transform 1s;
 }
-
+.menu-icon title {
+    visibility: hidden;
+}
 .text-outer {
     display: table;
     top: 0;
