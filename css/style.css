@@ -1,26 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
-.text {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.text-main {
     font-size: min(5vw, 40px);
     font-family: 'Montserrat', sans-serif;
-    animation: wave 0.5s ease-in-out infinite alternate;
     text-align: center;
     text-transform: uppercase;
-    line-height: 95vh;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    margin: 0;
 
 }
 
-.text p {
-    display: inline-block;
-    vertical-align: middle;
+.text-main-gradient{
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
 }
 
+.wave {
+    animation: wave 0.5s ease-in-out infinite alternate;
+}
 @keyframes wave {
     0% {
         transform: translateY(0);
@@ -29,4 +38,40 @@
     100% {
         transform: translateY(-5px);
     }
+}
+
+.text-container {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+
+
+}
+
+.menu-icon {
+    font-size: x-large;
+    transform: translateY(0px);
+    color: black;
+    transition: transform 0.5s;
+}
+.menu-icon:hover {
+    transform: translateY(30px);
+    transition: transform 1s;
+}
+
+.text-outer {
+    display: table;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.text-middle {
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+}
+
+.text-inner {
+    margin: auto;
+    width: 100%;
 }
